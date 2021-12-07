@@ -1,0 +1,78 @@
+.bookmark{
+    content: url('/images/bookmark.png');
+    height: 25px;
+    width: 28px;
+    margin-left: $l-size;
+    vertical-align: middle;  
+    cursor: pointer;
+  }
+  .bookmarked{
+    content: url('/images/bookmark-click.png');
+    height: 25px;
+    width: 28px;
+    margin-left: $l-size;
+    vertical-align: middle;  
+    cursor: pointer;
+  }
+  .tooltip .tooltiptext{
+    background-color:$light;
+    border-radius: $radius;
+    border: 1px solid darken($off-white, 7%);
+    color:$grey;
+    font-style: normal!important;
+    left: 0%;
+    position: relative;
+    padding: 5px 10px;
+    margin-left: -58px; 
+    top: -2.3em;
+    visibility: hidden;
+    z-index: 1;
+  }
+  
+  .tooltip .tooltiptext:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: $light transparent transparent transparent;
+  }
+  .tooltip:hover .tooltiptext{
+    visibility: visible;
+  }
+
+ .tagline{
+    margin-top:10%;
+    font-size:20px;
+ }
+
+.slate_box{
+    border: 1px solid $light-grey;
+    border-radius: $radius;
+    padding:  $m-size $m-size $xl-size $m-size;
+}
+.slate{
+    border: 1px solid $light-grey;
+    padding: 20px;
+    line-height: 1.5em;
+    margin-bottom: $s-size;
+}
+
+
+.post_btn{
+ float: right;
+ button{
+   margin-left: $xs-size;
+ }
+}
+.remove_comment{
+  content: url('/images/trash.png');
+  cursor: pointer;
+  height: 20px;
+  width: 25px;
+  margin-left: $l-size;
+  vertical-align: middle;  
+  
+}

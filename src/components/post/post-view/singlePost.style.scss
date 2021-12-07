@@ -1,0 +1,40 @@
+.read__title{
+   text-align: center;
+    color: #333333;
+    text-transform: uppercase;
+}
+$l-size: 3.2rem;
+.post_subData{
+    display: flex;
+    justify-content: center;
+}
+.bookmark{
+    content: url('/images/bookmark.png');
+    height: 25px;
+    width: 28px;
+    margin-left: $l-size;
+    vertical-align: middle;  
+    cursor: pointer;
+  }
+  .bookmarked{
+    content: url('/images/bookmark-click.png');
+    height: 25px;
+    width: 28px;
+    margin-left: $l-size;
+    vertical-align: middle;  
+    cursor: pointer;
+  }
+.read_subtitle{
+    @extend .read__title;
+    font-size: 12px;
+}
+
+.post-full-img img{
+    object-fit: cover;
+    width: 100%;
+}
+@media (min-width: 1024px) {
+    .post-full-img img{
+	height: 600px;
+	}
+  }

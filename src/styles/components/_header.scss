@@ -1,0 +1,20 @@
+.header{
+    background: white;  
+    // box-shadow: 0px 15px 12px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: $m-size;
+}
+.header__content{
+    align-items: center;
+    display: flex;
+    justify-content:space-between;   
+    
+}
+
+.header__login{
+    margin: 0 2rem 0 1rem !important;
+}
+.header__title{
+      
+    text-decoration: none; 
+  
+}

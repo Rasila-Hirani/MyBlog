@@ -1,0 +1,9 @@
+ const PostActionTypes = {
+    ADD_POST :'ADD_POST',
+    UPDATE_POST:'UPDATE_POST',
+    REMOVE_POST:'REMOVE_POST',
+  
+    FETCH_POSTS_START:'FETCH_POSTS_START',
+    FETCH_POSTS_SUCCESS:'FETCH_POSTS_SUCCESS'
+}
+export default PostActionTypes;

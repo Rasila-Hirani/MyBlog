@@ -1,0 +1,19 @@
+.page-header{   
+    margin-bottom: $s-size;
+    padding:$s-size;   
+}
+.page-header__actions{
+    margin-top: $m-size;
+}
+.page-header__title{
+    color: $dark-grey;
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    @media (min-width: $desktop-breakpoint) {
+        font-weight: 300;
+        flex-direction: row;
+        margin: 0;       
+   }
+}

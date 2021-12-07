@@ -1,0 +1,44 @@
+.box-layout{
+    align-items: center;
+    background: url('/images/bg.jpeg');
+    
+    background-size:cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;      
+}
+
+div.logo{    
+   content: url('/images/favicon.png');
+    height:70px;  
+    width: 70px;
+}
+.box-layout__box{
+    align-items: center;
+    background: fade-out(white,0.15);
+    border-radius:$radius;
+    display: flex;
+    flex-direction: column;
+    padding: $s-size;
+    text-align: center;
+    width:35rem;
+    @media (min-width:$desktop-breakpoint) {      
+        width:50rem;
+       
+        padding:$l-size;
+      }
+}
+
+.box-layout__title{
+    margin: 0 0 $m-size 0;
+    line-height: 1;
+}
+
+.box-layout_button{
+  margin: $s-size 0;
+}
+.box-layout_span{
+    padding: 0 $s-size;  
+    align-items: center;
+}

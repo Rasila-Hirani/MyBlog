@@ -1,0 +1,132 @@
+.ReactModalPortal>div {
+    opacity: 0;
+  }
+  
+  .ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity 200ms ease-in-out;
+  }
+  
+  .ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+  
+  .ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }
+  
+  .modal { 
+    align-items: center;    
+    background:white;
+    border: 1px solid #cacccd;
+    border-radius: $radius;
+    max-width:40rem;
+    text-align: center;
+    outline: none;
+    @media (min-width:$desktop-breakpoint) {      
+      max-width: 60rem;
+      padding: $s-size;
+    }
+  }
+  .alertModal{
+    @extend .modal;
+    padding: $s-size;
+    button{
+      top:-15px;
+      right:-15px
+    }
+    span{
+      display: block;
+      font-size: $font-size-medium;
+      margin: $s-size 0px;
+    }
+    @media (min-width:$desktop-breakpoint) {      
+      padding: $l-size; 
+    }
+  }
+
+  .modal__header{
+    justify-content:center;
+    display: flex;
+    position: relative;
+  }
+  .modal__title {
+    margin: $l-size 0 $l-size 0;
+  }
+  
+  .modal__body {
+    font-size: 2rem;
+    font-weight: 300; 
+    flex-grow: 1;     
+    word-break: break-all;   
+  }
+  
+  
+  .modal_button {	
+    background: white;
+    border-radius:$radius;
+    border: 1px solid #cacccd; 
+    cursor:pointer;
+    color:$grey;
+    display:block;
+    font-size:$font-size-medium;
+    font-weight: 400px;
+    width: 250px;   
+    margin-bottom: $s-size;
+    padding:$xs-size;	    
+    text-align: center;
+    &:hover{
+      color: $dark-grey;
+    }
+  }
+  .modal__cross_btn{  
+    padding:5px;
+  margin: 0;
+  background: transparent;
+  border: 1px solid $dark-grey;
+  border-radius: $radius;
+  position: absolute;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  }
+  .modal_button:active {
+    position:relative;
+    top:1px;
+  } 
+  .modal__input{
+    border: 1px solid #cacccd;
+    border-radius:$radius;
+    height: 45px;
+    font-size: $font-size-medium;
+    font-weight: 300;
+    padding: $s-size;
+    width: 250px;
+}
+.modal__select{
+    @extend .modal__input;  
+    margin-bottom: $s-size;  
+}
+.modal__form-error{
+  margin: 0 0 $m-size 0;
+  font-style: italic;
+  color: red;
+  font-size: $m-size;
+  width: 240px;
+  word-break: break-all;
+}
+  .google_logo{
+    content: url('/images/icon-google.png');
+    height:20px;  
+    width: 20px;   
+    vertical-align: middle;    
+  }
+  .facebook_logo{
+    content: url('/images/icon-facebook.png');
+    height:20px;  
+    width: 20px;   
+    vertical-align: middle;    
+  }
+  
