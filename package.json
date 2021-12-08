@@ -51,7 +51,6 @@
     "slate": "^0.59.0",
     "slate-react": "^0.59.0",
     "style-loader": "1.2.1",
-    "uuid": "8.1.0",
     "webpack": "4.43.0",
     "xss": "^1.0.8"
   },
