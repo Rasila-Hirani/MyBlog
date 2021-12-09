@@ -1,10 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
-import moment from 'moment';
+
 import trimPost from '../../../selectors/trimPost';
 import './post.scss';
-import { Span } from 'slate';
+
 const Post =({post,comments,currentUser})=>{
 
 
@@ -19,6 +19,7 @@ const Post =({post,comments,currentUser})=>{
                      <div className="title"><h3>{title} </h3></div>
              </Link>
             <div>
+            
             {
                     !!currentUser ?(
                         currentUser.id === userId ?

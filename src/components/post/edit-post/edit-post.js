@@ -7,7 +7,7 @@ import DeletePostModal from '../../DeletePostModal';
 import {startUpdatePost,startRemovePost} from '../../../redux/post/post.action';
 
 const EditPost =({history,startUpdatePost,startRemovePost,post})=>{
-  console.log(history)
+
   const [showModal,setShowModal]=useState(undefined);
 
   const handleOpenModal = () => {
